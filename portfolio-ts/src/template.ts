@@ -96,7 +96,7 @@ if (!projeto) {
   if (elMain) elMain.style.display = 'none';
 } else {
   document.title = `${projeto.title} | Portfólio`;
-  
+
   const elTit = document.getElementById('tpl-title');
   const elTitHero = document.getElementById('tpl-title-hero');
   const elSub = document.getElementById('tpl-subtitle');
@@ -108,9 +108,9 @@ if (!projeto) {
   if (elTitHero) elTitHero.textContent = projeto.title;
   if (elSub) elSub.textContent = projeto.subtitle;
   if (elDesc) elDesc.textContent = projeto.description;
-  if (elCapa) { 
-    elCapa.src = projeto.cover; 
-    elCapa.alt = projeto.title; 
+  if (elCapa) {
+    elCapa.src = projeto.cover;
+    elCapa.alt = projeto.title;
   }
   if (elCont) elCont.textContent = `${projeto.images.length} imagens`;
 
@@ -181,7 +181,7 @@ if (!projeto) {
 
   const galleryEl = document.getElementById('tpl-gallery')!;
 
-  projeto.images.forEach((url, i) => {
+  projeto.images.forEach((_, i) => {
     const item = document.createElement('div');
     item.className = 'gallery-item skeleton';
     item.dataset.index = String(i);
