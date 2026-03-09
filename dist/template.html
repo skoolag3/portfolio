@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script type="module" crossorigin src="/assets/template-CiSZI3Cz.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/projects-data-BLumca1q.js">
+  <link rel="stylesheet" crossorigin href="/assets/template-6vl2lv_k.css">
+</head>
+
+<body class="tpl-body">
+
+  <div class="cyber-bg-container">
+    <div class="cyber-circuit-pattern"></div>
+    <div class="cyber-bg-overlay"></div>
+  </div>
+
+  <header class="tpl-header">
+    <div class="tpl-header-content">
+      <a href="/" class="tpl-back-btn">
+        <i data-lucide="chevron-left"></i>
+        <span>Voltar</span>
+      </a>
+      <h1 class="tpl-title" id="tpl-title">Carregando...</h1>
+      <div class="tpl-tags" id="tpl-tags"></div>
+    </div>
+  </header>
+
+  <div id="not-found" class="tpl-error-state" style="display: none;">
+    <i data-lucide="alert-circle" style="width: 48px; height: 48px; margin-bottom: 1rem;"></i>
+    <h2>Projeto não encontrado</h2>
+    <p>O projeto que você está procurando não existe ou foi removido.</p>
+    <a href="/" class="btn-primary" style="margin-top: 2rem;">Voltar ao Início</a>
+  </div>
+
+  <div id="template-main">
+    <section class="tpl-hero">
+      <div class="tpl-hero-img-wrap">
+        <img class="tpl-hero-img" id="tpl-cover" src="" alt="Capa do Projeto" />
+        <div class="tpl-hero-overlay"></div>
+      </div>
+      <div class="tpl-hero-content">
+        <h2 class="tpl-hero-title" id="tpl-title-hero"></h2>
+        <p class="tpl-hero-subtitle" id="tpl-subtitle"></p>
+        <div class="tpl-tech-badges" id="tpl-tech"></div>
+        <p class="tpl-hero-desc" id="tpl-description"></p>
+      </div>
+    </section>
+
+    <main class="tpl-container">
+
+      <div class="tpl-stats-section" id="tpl-stats-section">
+        <div class="tpl-section-header">
+          <h2 class="tpl-section-title">Linguagens</h2>
+        </div>
+        <div class="lang-stats-bar" id="lang-stats-bar"></div>
+        <div class="lang-stats-labels" id="lang-stats-labels"></div>
+      </div>
+
+      <div class="tpl-details-grid">
+        <div class="tpl-section" id="tpl-features-section">
+          <div class="tpl-section-header">
+            <i data-lucide="check-circle-2" style="color: var(--brand-color); width: 20px;"></i>
+            <h2 class="tpl-section-title">Funcionalidades</h2>
+          </div>
+          <ul class="tpl-features-list" id="tpl-features"></ul>
+        </div>
+
+        <div class="tpl-section" id="tpl-team-section">
+          <div class="tpl-section-header">
+            <i data-lucide="users" style="color: var(--brand-color); width: 20px;"></i>
+            <h2 class="tpl-section-title">Equipe & Créditos</h2>
+          </div>
+          <div class="tpl-team-grid" id="tpl-team"></div>
+        </div>
+      </div>
+
+      <div class="tpl-section-header" style="margin-top: 4rem;">
+        <h2 class="tpl-section-title">Screenshots</h2>
+        <span class="tpl-gallery-counter" id="tpl-counter"></span>
+      </div>
+
+      <div class="tpl-gallery" id="tpl-gallery"></div>
+    </main>
+  </div>
+
+  <footer class="tpl-footer"
+    style="padding: 4rem 2rem; text-align: center; border-top: 1px solid rgba(168, 85, 247, 0.1); margin-top: 5rem;">
+    <p style="opacity: 0.6;">© 2026 skoolage | Gabriel Rogerio</p>
+  </footer>
+
+  <div class="zoom-modal" id="zoomModal" aria-hidden="true">
+    <div class="zoom-backdrop" id="zoomBackdrop"></div>
+    <div class="zoom-content">
+      <button class="zoom-nav prev" id="zoomPrev" aria-label="Imagem anterior">
+        <i data-lucide="chevron-left"></i>
+      </button>
+      <div class="zoom-img-container">
+        <img src="" alt="Zoom" id="zoomImg" class="zoom-img" />
+        <div class="zoom-inspect-overlay">
+          <div class="inspect-info" id="inspectInfo"></div>
+        </div>
+      </div>
+      <button class="zoom-nav next" id="zoomNext" aria-label="Próxima imagem">
+        <i data-lucide="chevron-right"></i>
+      </button>
+      <button class="zoom-close" id="zoomClose" aria-label="Fechar zoom">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
