@@ -1,0 +1,13 @@
+:root {
+  --bg-dark: #05010a;
+  --bg-dark-soft: #0d0620;
+  --bg-card: rgba(15, 7, 35, 0.62);
+  --text-main: #f8fafc;
+  --text-muted: #c4b5fd;
+  --brand-color: #a855f7;
+  --brand-hover: #c084fc;
+  --brand-glow: rgba(168, 85, 247, 0.5);
+  --brand-glow-strong: rgba(168, 85, 247, 0.75);
+  --surface-border: rgba(168, 85, 247, 0.22);
+  --ring: rgba(168, 85, 247, 0.28);
+}

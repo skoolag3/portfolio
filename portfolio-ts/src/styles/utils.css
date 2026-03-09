@@ -1,0 +1,29 @@
+.btn-glow-locked {
+  box-shadow:
+    0 0 0 3px rgba(168, 85, 247, 0.35),
+    0 14px 36px rgba(168, 85, 247, 0.6),
+    0 0 60px rgba(168, 85, 247, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22) !important;
+}
+
+.will-animate {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .cyber-circuit-pattern { animation: none; opacity: 0.24; transform: none; }
+  .hero-content { transition: none !important; }
+}
